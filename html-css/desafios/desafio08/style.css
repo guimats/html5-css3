@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+* {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+h1 {
+    justify-content: center;
+    display: flex;
+}
+
+.seta {
+    font-size: 60px;
+}
+
+.link-cursos {
+    color: rgb(107, 91, 134);
+}
+
+.thumbs {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.img-home {
+    width: 200px;
+    margin: 1px 3px;
+}
