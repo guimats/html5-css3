@@ -1,0 +1,75 @@
+----- Harmonia de cores -----
+
+--> Circulo cromático
+-- Utilizado para harmizar cores
+
+-> Cores primárias:
+- Amarelo
+- Azul
+- Vermelho
+
+-> Cores secundárias:
+- Verde
+- Violeta
+- Laranja
+
+-> Cores terciárias:
+- Está sempre entre a cor primária e secúndaria
+- No nome, deve ser sempre primeiro o nome da cor primária e depois da secundárias.
+- Exemplo de cores:
+- Amarelo-esverdeado
+- Amarelo-alaranjado
+- Vermelho-alaranjado
+- Vermelho-aroxeado
+- Azul-aroxeado
+- Azul-esverdeado
+
+-> Separação por temperatura de cores:
+- Cores com tons para o lado amarelo, laranja e vermelho -> cores quentes 
+- Cores con tons para o lado azul, verde e violeta -> cores frias
+
+-> Cores complementares - cor que mais contrasta:
+- Para saber cor que mais contrasta com outra cor é só traçar uma reta no círculo cromático
+- Ex: Violeta e amarelo; Vermelho e verde; Azul e laranja
+
+-> Cores análogas - cores similares:
+- Para saber as cores análogas a cor escolhida, é só pegar as cores vizinhas no círculo cromático
+- Ex: Violeta -> roxo e azul-aroxeado
+
+*Para criar uma paleta, podemos utilizar uma mistura entre cores análogas e uma cor complementar
+
+-> Cores análogas realcionadas:
+- Pega duas cores vizinhas do circulo cromático, pula uma e pega a próxima
+- ex: Amarelo, amarelo-alaranjado, (pula o laranja), vermelho-alaranjado
+
+-> Cores intercaladas:
+- Pega uma cor, pula uma vizinha e pega a próxima
+- Ex: Amarelo, (pula amarelo-alaranjado), laranja, (pula vermelho-alaranjado), vermelho
+
+- Cores triadicas:
+- Pula de três em três cores (ex: cores primárias)
+
+- Cores quadrados:
+- Pula de duas em duas cores (ex: cores primárias)
+
+- Monocromia:
+- Pega uma cor e altera a satuação e luminosidade dela
+
+SITE ADOBE PARA CRIAR PALETA DE CORES:
+https://color.adobe.com/pt/create/color-wheel
+
+SITE PARA VER COMO SITE FICA:
+https://paletton.com/
+
+---- TIPOGRAFIA ----
+Serifa - pequeno traço gerado em algumas fontes
+
+Categorias de fontes:
+Serifadas - possui serifas
+Sans-serif - não possui serifas
+Monoespaçada - todas as letras tem a mesma largura
+Handwriting/Scriptada -  simula a calegrafia humana, feito a mão
+Display - não segue as regras padrões das fontes, são fontes comemorativas
+
+Combinações seguras para fontes:
+https://www.w3schools.com/css/css_font_pairings.asp
