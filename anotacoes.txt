@@ -73,3 +73,19 @@ Display - não segue as regras padrões das fontes, são fontes comemorativas
 
 Combinações seguras para fontes:
 https://www.w3schools.com/css/css_font_pairings.asp
+
+font-weight: 400; - > peso da fonte (bold, lighter, normal)
+font-style: italic; -> estilo da fonte
+text-decoration: underline; -> decoração fonte
+
+Importar fontes - Google fonts
+
+Tipos de formatos:
+- opentype (otf)
+- truetype (ttf)
+- embeded-opentype
+- truetype-aat (Apple Advanced Typography)
+- svg
+
+PLUGIN PARA PEGAR FONTES DE TEXTO:
+https://chromewebstore.google.com/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-BR
