@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #84E1AD;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #40B972, #5AA67D, #1C613A 80%);
+    height: 180px;
+    color: white;
+}
+
+.header-content {
+    text-align: center;
+    justify-content: center;
+}
+
+h1.header-content {
+    padding-top: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+}
+
+p.header-content {
+    padding-top: 28px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+}
+
+.header-menu {
+    padding-top: 50px;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.header-menu>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.header-menu>a:hover {
+    background-color: #5AA67D;
+    transition: background-color 1s ease;
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.section-one h2,
+h3 {
+    font-family: Idroid;
+}
+
+.section-one h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.section-one h3 {
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, #5cf79d81, #5efa9f23, white)
+}
+
+.section-one p {
+    padding: 20px 0px;
+    text-indent: 2em;
+    line-height: 1.7em;
+}
+
+.section-one a {
+    text-decoration: none;
+    color: #1C613A;
+    font-weight: bolder;
+    padding: 3px 5px;
+}
+
+.section-one a::after {
+    content: "\00a0\1F517";
+}
+
+.section-one a:hover {
+    background-color: #1C613A;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.first-image,
+.first-image-pq {
+    width: 100%;
+}
+
+.destaque {
+    color: #1C613A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+    font-weight: bolder;
+}
+
+@media (min-width: 600px) {
+    .first-image-pq {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .first-image {
+        display: none;
+    }
+}

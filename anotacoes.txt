@@ -89,3 +89,28 @@ Tipos de formatos:
 
 PLUGIN PARA PEGAR FONTES DE TEXTO:
 https://chromewebstore.google.com/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-BR
+
+
+MODEL BOX:
+altura - height
+largura - width
+border - borda (dentro do elemento)
+padding - preenchimento entre borda e conteudo
+margin - espaçamento externo
+outline - contorno fora do elemento
+
+box-level:
+- sempre se inicia em uma linha nova (quebra linha)
+- ocupa a linha toda
+- ex: div, h1-h6, p, main, header, etc...
+
+inline-level:
+- inicia na mesma linha do box anterior
+- não ocupa a linha toda
+- ex: span, a, code, small, em, label, button, etc...
+
+user agent - navegador que exibe o site
+
+margin: auto; -> centralizar box
+
+LINK -> http://www.notte.com.br/
