@@ -50,6 +50,9 @@ p.header-content {
     padding-top: 48px;
     font-size: 0.8em;
     margin-left: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .header-menu>a {
@@ -83,7 +86,7 @@ main {
 
 .section-one h2 {
     padding-top: 20px;
-    font-size: 1.8em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -161,6 +164,14 @@ main {
 @media (max-width: 650px) {
     .first-image {
         display: none;
+    }
+
+}
+
+@media (max-width: 598px) {
+
+    .header-menu {
+        padding-top: 34px;
     }
 }
 
