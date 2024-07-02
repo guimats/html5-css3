@@ -7,6 +7,11 @@
     font-style: normal;
 }
 
+:root {
+    --standard-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    --stardard-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -31,26 +36,27 @@ header {
 h1.header-content {
     padding-top: 20px;
     font-size: 2em;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+    text-shadow: var(--stardard-text-shadow);
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
 }
 
 p.header-content {
-    padding-top: 28px;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+    padding-top: 25px;
+    text-shadow: var(--stardard-text-shadow);
 }
 
 .header-menu {
-    padding-top: 50px;
+    padding-top: 48px;
     font-size: 0.8em;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 .header-menu>a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 1.3em;
     padding: 5px 15px;
 }
 
@@ -62,44 +68,51 @@ p.header-content {
 
 main {
     background-color: white;
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     padding: 20px 15px;
+    min-width: 300px;
+    max-width: 1000px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: var(--standard-box-shadow)
 }
 
-.section-one h2,
-h3 {
+.font-idroid {
     font-family: Idroid;
 }
 
 .section-one h2 {
+    padding-top: 20px;
     font-size: 1.8em;
     text-align: center;
 }
 
 .section-one h3 {
+    padding: 3px 0 3px 10px;
+    margin-top: 20px;
     font-size: 1.5em;
-    background-image: linear-gradient(to right, #5cf79d81, #5efa9f23, white)
+    background-image: linear-gradient(to right, #5cf79d81, #5efa9f23, white);
+    border-radius: 10px 0 0 10px;
 }
 
 .section-one p {
     padding: 20px 0px;
     text-indent: 2em;
-    line-height: 1.7em;
+    line-height: 2em;
 }
 
-.section-one a {
+.links-externos {
     text-decoration: none;
     color: #1C613A;
     font-weight: bolder;
     padding: 3px 5px;
 }
 
-.section-one a::after {
+.links-externos::after {
     content: "\00a0\1F517";
 }
 
-.section-one a:hover {
+.links-externos:hover {
     background-color: #1C613A;
     color: white;
     font-weight: bolder;
@@ -111,20 +124,96 @@ h3 {
     width: 100%;
 }
 
+.bugdroid-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
 .destaque {
     color: #1C613A;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+    text-shadow: var(--stardard-text-shadow);
     font-weight: bolder;
 }
 
-@media (min-width: 600px) {
+.box-video {
+    position: relative;
+    background-color: #1C613A;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    margin: 0px;
+}
+
+.youtube-video {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+}
+
+@media (min-width: 650px) {
     .first-image-pq {
         display: none;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .first-image {
         display: none;
     }
+}
+
+.section-two {
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: var(--standard-box-shadow)
+}
+
+.section-two-header {
+    background-color: #38a264;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+
+.section-two-main {
+    background-color: #bff2d5;
+    padding: 20px 10px;
+    line-height: 2em;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.section-two-main p {
+    text-indent: 2em;
+}
+
+.section-two-main ul {
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.final-text {
+    padding: 20px 0px;
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+footer {
+    margin: 10px 0 1px 0;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #1C613A;
+    text-align: center;
+}
+
+.footer-link {
+    color: white;
+    text-shadow: var(--stardard-text-shadow);
 }
