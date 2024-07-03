@@ -122,3 +122,8 @@ MOCKFLOW (Para construir layout do site) -> https://mockflow.com/
 2- No CSS, colocar a div com 'positional: relative' e o iframe como 'positional: absolute'
 3- Para centralizar o vídeo, criar um padding-bottom (no exemplo 56.25%);
 4- No Iframe, adicionar top e left (no exemplo top: 2,5% e left 5%) e o width e height (no exemplo width 90% e 95%)
+
+background-size configs:
+- cover
+- contain
+- auto
