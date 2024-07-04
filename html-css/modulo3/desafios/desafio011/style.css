@@ -1,13 +1,25 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", sans-serif;
+    --font3: "Sriracha", cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2)
 }
 
 body {
     min-height: 100vh;
+    font-family: var(--font1);
+    /* max-width: 1300px; */
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.486);
 }
 
 a {
@@ -30,6 +42,7 @@ header {
 }
 
 header h1 {
+    font-family: var(--font2);
     font-size: 4em;
     padding: 14px;
     font-variant: small-caps;
@@ -41,12 +54,13 @@ header p {
 
 
 main p {
-    font: bold 1.5em cursive;
-    line-height: 2.5em;
+    font: normal 2em var(--font3);
+    line-height: 2em;
     justify-content: left;
 }
 
 section {
+    background-color: white;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
@@ -60,21 +74,26 @@ section {
     padding-top: 10vh;
 }
 
+.content-image {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+}
+
 .content-image p {
     padding: 0 10px;
     color: white;
-    width: max-content;
-    background-color: rgba(0, 0, 0, 0.329);
+    /* width: max-content; */
+    display: inline-block;
+    background-color: #00000054;
+    text-shadow: 1px 1px 0px black;
 }
 
 .bg-one {
-    background: url(images/background001.jpg) right center no-repeat;
-    background-size: cover;
+    background: url(images/background001.jpg) right center no-repeat fixed;
 }
 
 .bg-two {
-    background: url(images/background002.jpg) right center no-repeat;
-    background-size: cover;
+    background: url(images/background002.jpg) right center no-repeat fixed;
 }
 
 .last-content {
@@ -86,5 +105,34 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
+}
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    header p {
+        font-size: 1.0em;
+    }
+
+    main p {
+        font-size: 1.6em;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 0.8em;
+        }
+
+        main p {
+            font-size: 1.4em;
+        }
+    }
+
 }
