@@ -124,6 +124,28 @@ MOCKFLOW (Para construir layout do site) -> https://mockflow.com/
 4- No Iframe, adicionar top e left (no exemplo top: 2,5% e left 5%) e o width e height (no exemplo width 90% e 95%)
 
 background-size configs:
-- cover
-- contain
-- auto
+- cover (a imagem ocupa a tela toda, mas dependendo do tamanho, ela fica cortada)
+- contain (a imagem se adapta a resolução da tela, mas pode não ocupar todo o espaço)
+- auto (comportamento padrão, imagem aparece com a resolução padrão dela no background)
+
+background-attachment: fixed; -> fixa a imagem de fundo na tela, fazendo que quando exista rolagem de tela, a imagem permaneça estática no fundo
+
+ALINHAMENTO VERTICAL:
+No alinhamento vertical, sempre precisamos ter um container e um conteudo. O conteudo, que é o que queremos alinhar verticalmente, é o que desejamos alinhar e ele precisa estar dentro do container, por exemplo, uma div com a classe content dentro de uma div com a classe container. 
+
+A div container precisa ter o position como relative (padrão) e a div content precisa ter o position como absolute.
+
+Após definir o content como absolute, podemos mexer em alguns atributos dele, como o top e o left. O atributo top irá definir quanto da parte vertical o conteúdo irá se locomover e o left, a parte horizontal (normalmente é utilizado % para definir os valores)
+
+Ex de centralização: 
+
+top: 50%;
+left: 50%;
+
+Porém, ao realizar isso, o content irá centralizar, mas utilizando como base a ponta esquerda superior da box do content. Para resolver isso utilizamos a propriedade transform: translate().
+
+Ex:
+
+transform: translate(-50%, -50%);
+
+Essa funcionalidade do transform: translate faz com que o content se mova também verticalmente e horizontal, fazendo com que seja possível ajustar o centro do content com o centro do container.
