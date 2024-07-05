@@ -149,3 +149,32 @@ Ex:
 transform: translate(-50%, -50%);
 
 Essa funcionalidade do transform: translate faz com que o content se mova também verticalmente e horizontal, fazendo com que seja possível ajustar o centro do content com o centro do container.
+
+TABELAS:
+
+/* alinhamento horizontal: left center right */
+text-align: center;
+/* alinhamento vertical: top middle bottom */
+vertical-align: middle;
+
+/* border-collapse para tirar os espaços entre os td */
+border-collapse: collapse;
+
+ANATOMIA PARA TABELAS
+    CAPTION
+    THEAD
+        TR, TD, TH
+    TBODY
+        TR, TD, TH
+    TFOOT
+        TR, TD, TH
+
+colspan -> para expandir/mesclar cédula na coluna
+rowspan -> para expandir/mesclar cédula na linha
+
+/* Deixar tabela responsiva */
+Envelopar a table em uma div e aplicar a seguinte configuração nessa div:
+
+.container {
+    overflow-x: auto;
+}
