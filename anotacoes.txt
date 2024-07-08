@@ -61,6 +61,10 @@ https://color.adobe.com/pt/create/color-wheel
 SITE PARA VER COMO SITE FICA:
 https://paletton.com/
 
+---- IMAGENS SEM COPYRIGHT  ----
+https://unsplash.com/
+https://www.pexels.com/pt-br/
+
 ---- TIPOGRAFIA ----
 Serifa - pequeno traço gerado em algumas fontes
 
@@ -178,3 +182,6 @@ Envelopar a table em uma div e aplicar a seguinte configuração nessa div:
 .container {
     overflow-x: auto;
 }
+
+----- IFRAMES ------
+Tamanho padrão: 300x150 pixels
