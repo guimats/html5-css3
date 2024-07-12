@@ -185,3 +185,19 @@ Envelopar a table em uma div e aplicar a seguinte configuração nessa div:
 
 ----- IFRAMES ------
 Tamanho padrão: 300x150 pixels
+
+
+---- FORMULÁRIOS ----
+- autocomplete="off" para que não apareça sugestões nos campos do forms
+- diferença entre name e id -> name mais utilizado para html e php e id para javascript
+- UTILIZAR LABEL PARA LIGAR TEXTO AO INPUT
+
+-- Metodos de envio do formulário
+- GET: máximo de 3000 bytes pode ser enviado, dados aparecem na URL
+- POST: mais recomendado para campos sensíveis e imagens, dados não aparecem na URL, mas ainda da para localizar (preciso usar HTTPS)
+
+-- Atributos para os inputs:
+- required -> torna o preenchimento do input obrigatório
+- minlength/maxlength -> adiciona um mínimo ou máximo de caracteres que pode ser preenchido
+- placeholde -> colocar texto de dica no campo do input
+- autocomplete -> no input, o autocomplete pode ter vários valores, que representam senha, nome, usuário e outras infomrações (para funcionar precisa estar com o autocomplete do form como on)
