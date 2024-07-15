@@ -201,3 +201,12 @@ Tamanho padrão: 300x150 pixels
 - minlength/maxlength -> adiciona um mínimo ou máximo de caracteres que pode ser preenchido
 - placeholde -> colocar texto de dica no campo do input
 - autocomplete -> no input, o autocomplete pode ter vários valores, que representam senha, nome, usuário e outras infomrações (para funcionar precisa estar com o autocomplete do form como on)
+- pattern -> possibilita adicionar regex para filtrar melhor o input
+
+É possível agrupar inputs com a tag fieldset, adicionando tbm uma legenda com legend
+
+Sobre as tags RADIO e CHECKBOX
+- para que as tags radio funcionem corretamente, elas precisam possuir o mesmo name
+
+Input FILE ***IMPORTANTE***
+- quando for enviar algum arquivo pelo formulário utilizando o input file, é preciso utilizar o metódo post, pois com o metodo get gera erro. (textarea também funciona melhor com o método post)
