@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* Todas as demais midias */
+
+/* Typical Device Breakpoint */
+
+/* impressão */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        /* Desnecessário */
+        background-image: url(../img/back-print.jpg);
+    }
+
+    main {
+        border: 1px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #printer {
+        display: block;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+/* desktop */
+@media (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+}
+
+/* grandes telas */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
