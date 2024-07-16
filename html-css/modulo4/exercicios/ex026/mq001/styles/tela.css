@@ -19,7 +19,7 @@ header {
 header>h1 {
     text-align: center;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
-    padding: 20px;
+    padding: 10px;
 }
 
 menu ul {
