@@ -264,3 +264,17 @@ flex-flow: column wrap;
 - align-itens: flex-start; (padrão, primeiro item começa no cros-start e os outros itens ficam colados nele, jogando o espaço em branco em direção ao cross-end)
 - align-itens: flex-end; (primeiro item começa no cros-end e os outros itens ficam colados nele, jogando o espaço em branco em direção ao cross-start)
 - align-itens: center; (itens ficam centralizados entre o cross-start e o cross-end, com os itens colados)
+
+
+--- FLEX nos ITENS ---
+/* flex-grow faz com que os elementos crescam e ocupem os espaços que iriam sobrar no aumento da tela */
+/* flex-grow: 1; */
+/* medida inicial do elemento na direção main-axis */
+/* flex-basis: 320px; */
+/* permite que o elemento diminua o seu tamanho para não causar overflow */
+/* flex-shrink: 1; */
+/* SHOTHAND FLEX */
+/* grow shrink basis */
+/* flex: 1 1 320px; */
+
+align-self -> um align que pode ser inserido diretamente em um item/elemento, sem influenciar diretamente nos outros itens do container

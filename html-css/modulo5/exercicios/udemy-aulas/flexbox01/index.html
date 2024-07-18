@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: lightsalmon;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-flow: row nowrap;
+            height: 800px;
+        }
+
+        .item {
+            /* flex-grow faz com que os elementos crescam e ocupem os espaços que iriam sobrar no aumento da tela */
+            /* flex-grow: 1; */
+            /* medida inicial do elemento na direção main-axis */
+            /* flex-basis: 320px; */
+            /* permite que o elemento diminua o seu tamanho para não causar overflow */
+            /* flex-shrink: 1; */
+            /* SHOTHAND FLEX */
+            /* grow shrink basis */
+            /* flex: 1 1 320px; */
+            border: 1px solid rgba(0, 0, 0, 0.288);
+            width: 100%;
+            /* height: 200px; */
+            background-color: lightblue;
+        }
+
+        .item:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .item:nth-child(4) {
+            order: 2;
+            align-self: center;
+        }
+
+        .item:nth-child(2) {
+            order: 1;
+            align-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="item">
+            <p>Teste 1</p>
+        </div>
+        <div class="item">
+            <p>Teste 2</p>
+        </div>
+        <div class="item">
+            <p>Teste 3</p>
+        </div>
+        <div class="item">
+            <p>Teste 4</p>
+        </div>
+        <div class="item">
+            <p>Teste 5</p>
+        </div>
+    </main>
+</body>
+
+</html>
