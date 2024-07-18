@@ -249,9 +249,18 @@ Utilizar o SHORTHAND flex-flow para declarar o flex-wrap e o flex-direction. Ex:
 flex-flow: row nowrap;
 flex-flow: column wrap;
 
--- JUSTIFY-CONTENT: alinha em relação ao main-axis
+----- JUSTIFY-CONTENT ----- 
+**IMPORTANTE: alinha em relação ao main-axis
 - justify-content: flex-start; (padrão, primeiro item começa no main-start e os outros itens ficam colados nele, jogando o espaço em branco em direção ao main-end)
 - justify-content: flex-end; (primeiro item começa no main-end e os outros itens ficam colados nele, jogando o espaço em branco em direção ao main-start)
 - justify-content: center; (itens ficam centralizados entre o main-start e o main-end, com os itens colados)
 - justify-content: space-between; (primeiro item fica no main-start e ultimo item no main-end, colocando os outros itens entre eles com um espaçamento igual entre todos)
 - justify-content: space-evenly; (todos os itens ficam com um espaçamento igual entre eles, inclusive o primeiro e o ultimo do main-start e main-end)
+- justify-content: space-around; (separa a area do container pela quantidade de itens, e centraliza cada item em uma area separada)
+
+----- ALIGN-ITENS ----- 
+**IMPORTANTE: alinha em relação ao cross-axis
+- align-itens: stretch; (padrão, estica os elementos no sentido do cross-axis)
+- align-itens: flex-start; (padrão, primeiro item começa no cros-start e os outros itens ficam colados nele, jogando o espaço em branco em direção ao cross-end)
+- align-itens: flex-end; (primeiro item começa no cros-end e os outros itens ficam colados nele, jogando o espaço em branco em direção ao cross-start)
+- align-itens: center; (itens ficam centralizados entre o cross-start e o cross-end, com os itens colados)
