@@ -240,3 +240,18 @@ Quando a flex-direction é COLUMN-REVERSE:
 - cross-axis (horizontal): a ponta esquerda é o cross-start e a direita o cross-end
 
 -- FLEX-WRAP --
+- flex-wrap: nowrap; (comportamento padrão, onde quando o container encolhe, os itens dentro dele encolhem juntos)
+- flex-wrap: wrap; (quando diminuir o container até chegar no limite do tamanho dos itens, os itens quebram na direção do cross-axis)
+- flex-wrap: wrap-reverse; (quando diminuir o container até chegar no limite do tamanho dos itens, os itens quebram na direção contrária do cross-axis)
+
+DICA IMPORTANTE:
+Utilizar o SHORTHAND flex-flow para declarar o flex-wrap e o flex-direction. Ex:
+flex-flow: row nowrap;
+flex-flow: column wrap;
+
+-- JUSTIFY-CONTENT: alinha em relação ao main-axis
+- justify-content: flex-start; (padrão, primeiro item começa no main-start e os outros itens ficam colados nele, jogando o espaço em branco em direção ao main-end)
+- justify-content: flex-end; (primeiro item começa no main-end e os outros itens ficam colados nele, jogando o espaço em branco em direção ao main-start)
+- justify-content: center; (itens ficam centralizados entre o main-start e o main-end, com os itens colados)
+- justify-content: space-between; (primeiro item fica no main-start e ultimo item no main-end, colocando os outros itens entre eles com um espaçamento igual entre todos)
+- justify-content: space-evenly; (todos os itens ficam com um espaçamento igual entre eles, inclusive o primeiro e o ultimo do main-start e main-end)
