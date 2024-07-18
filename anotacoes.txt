@@ -210,3 +210,33 @@ Sobre as tags RADIO e CHECKBOX
 
 Input FILE ***IMPORTANTE***
 - quando for enviar algum arquivo pelo formulário utilizando o input file, é preciso utilizar o metódo post, pois com o metodo get gera erro. (textarea também funciona melhor com o método post)
+
+
+------------------------ FLEXBOX MODEL --------------------------
+--- CONFIGURAÇÕES CONTAINER ---
+-- FLEX-DIRECTION
+- flex-direction: row; (PADRÃO, em linha, da esquerda para direita)
+-outras opções:
+- flex-direction: row-reverse; (em linha, da direita para a esquerda)
+- flex-direction: column; (em coluna, de cima para baixo)
+- flex-direction: column-reverse; (em coluna, de baixo para cima)
+
+***IMPORTANTE***
+-- EIXOS:
+Quando a flex-direction é ROW:
+- main-axis (horizontal): a ponta esquerda é o main-start e a direita o main-end
+- cross-axis (vertical): o topo é o cross-start e o final o cross-end
+
+Quando a flex-direction é ROW-REVERSE:
+- main-axis (horizontal): a ponta direita é o main-start e a esquerda o main-end
+- cross-axis (vertical): o topo é o cross-start e o final o cross-end
+
+Quando a flex-direction é COLUMN:
+- main-axis (vertical): o topo é o main-start e o final o main-end
+- cross-axis (horizontal): a ponta esquerda é o cross-start e a direita o cross-end
+
+Quando a flex-direction é COLUMN-REVERSE:
+- main-axis (vertical): o final é o main-start e o topo o main-end
+- cross-axis (horizontal): a ponta esquerda é o cross-start e a direita o cross-end
+
+-- FLEX-WRAP --
