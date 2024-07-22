@@ -261,9 +261,20 @@ flex-flow: column wrap;
 ----- ALIGN-ITENS ----- 
 **IMPORTANTE: alinha em relação ao cross-axis
 - align-itens: stretch; (padrão, estica os elementos no sentido do cross-axis)
-- align-itens: flex-start; (padrão, primeiro item começa no cros-start e os outros itens ficam colados nele, jogando o espaço em branco em direção ao cross-end)
+- align-itens: flex-start; (primeiro item começa no cros-start e os outros itens ficam colados nele, jogando o espaço em branco em direção ao cross-end)
 - align-itens: flex-end; (primeiro item começa no cros-end e os outros itens ficam colados nele, jogando o espaço em branco em direção ao cross-start)
 - align-itens: center; (itens ficam centralizados entre o cross-start e o cross-end, com os itens colados)
+
+---- ALIGN-CONTENT -----
+**IMPORTANTE: alinha os elementos em relação ao cross-axis quando eles estão empacotados
+**IMPORTANTE: é uxado quando é utilizado o flex-wrap está como wrap
+- align-content: stretch; (padrão, estica os elementos no sentido do cross-axis)
+- align-content: flex-start; (cola os elementos no cross-start e joga o espaço em branco para o cross-end)
+- align-content: flex-end; (cola os elementos no cross-end e joga o espaço em branco para o cross-start)
+- align-content: center; (cria espaços em branco no cross-start e no cross-end, alinhando os elementos no centro do cross-axis)
+- align-content: space-between; (primeira linha fica no cross-start e ultima linha no cross-end, colocando as outras linhas entre eles com um espaçamento igual entre todos (caso tenha somente duas linhas, no meio fica somente o espaço em branco))
+- align-content: space-evenly; (todos os itens ficam com um espaçamento igual entre eles, inclusive o primeiro e o ultimo do cross-start e cross-end)
+- justify-content: space-around; (separa a area do container em espaços iguais, dividindo pela quantidade de itens, e centraliza cada item em uma area separada)
 
 
 --- FLEX nos ITENS ---
@@ -278,3 +289,14 @@ flex-flow: column wrap;
 /* flex: 1 1 320px; */
 
 align-self -> um align que pode ser inserido diretamente em um item/elemento, sem influenciar diretamente nos outros itens do container
+
+-------------- GRID TEMPLATE --------------
+grid-template-columns define qual o tamanho que cada coluna da grid irá ter; é possível definir a coluna com o tamanho fr, como por exemplo:
+
+grid-template-columns: 200px 1fr; -> neste caso, a primeira coluna terá 200px e a segunda ocupará todo o espaço restante
+
+grid-template-columns: 1fr 1fr 1fr; -> neste caso, terão três colunas com o mesmo tamanho, ocupando o espaço máximo definido (pode ser definido com max-width, por exemplo)
+
+É possível também criar uma grid responsíva que quebra sozinha sem causar overflow, utilizando a função repeat(), minmax() e também a funcção auto-fill. Um exemplo:
+
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); -> neste exemplo, a função repeat repete um valor quantas vezes você precisar. O primeiro argumento dela recebe a quantidade de vezes, que colocamos a função auto-fill para que o próprio código defina quantas vezes serão repetidas de acordo com o tamanho da tela. No segundo argumento utilizamos o minmax() para definir um tamanho mínimo que queremos para cada coluna e o tamanho máximo que ela pode ocupar na tela.
